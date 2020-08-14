@@ -1,3 +1,3 @@
 ## Test site
 
-Visit www.github.com/cisumplay/play
+Visit https://cisumplay.github.io/play/
