@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<title>Calculator</title>
+	<script> 
+		function disp(val)
+		{
+			document.getElementById('result').value+=val ;
+		}
+		function sol() 
+		{
+			var x = document.getElementById('result').value
+			var ans = eval(x)
+			document.getElementById('result').value = ans
+		}
+
+		function clr() 
+		{
+			document.getElementById('result').value = ""	
+		}
+	</script>
+	<style type="text/css">
+		input[type = "text"]
+		{
+			font-size: 30px ;
+			border : solid black 4px;
+			width: 200px;  
+			height: 30px ;			
+		}
+		input[type = "button"]
+		{ 
+         border: solid black 1px; 
+         width: 100% ;
+         height: 32px ;
+         font-size: 20px ;
+		}
+		.title
+		{
+			font-size: 25px;
+			border: solid black 4px;
+			background-color: yellow ;  
+		}
+		.title1
+		{
+			font-size: 25px;
+			border: solid black 1px;
+			background-color: yellow ;  
+		}	
+		.selector-for-some-widget {
+ 		 box-sizing: content-box;
+			}
+	</style>
+</head>
+<body>
+
+	<div class="table" ; style=" top: 30% ; left: 35%;">
+	<div class="title" align="center" ; style="text-align: center; margin:auto; width: 17% "><b>Simple Calculator</b></div>
+	<table border="0" align="center">	
+		<tr>
+			<td colspan="3"> <input type="text" id="result" />	</td>
+			<td><input type="button" style="width:50px ; height:35px"value="c" onclick="clr()" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="disp('7')" /></td>
+			<td><input type="button" value="8" onclick="disp('8')" /></td>
+			<td><input type="button" value="9" onclick="disp('9')" /></td>
+			<td><input type="button" value="+" onclick="disp('+')" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="disp('4')" /></td>
+			<td><input type="button" value="5" onclick="disp('5')" /></td>
+			<td><input type="button" value="6" onclick="disp('6')" /></td>
+			<td><input type="button" value="-" onclick="disp('-')" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onclick="disp('1')" /></td>
+			<td><input type="button" value="2" onclick="disp('2')" /></td>
+			<td><input type="button" value="3" onclick="disp('3')" /></td>
+			<td><input type="button" value="/" onclick="disp('/')" /></td>	
+		</tr>
+		<tr>
+			<td><input type="button" value="." onclick="disp('.')" /></td>
+			<td><input type="button" value="0" onclick="disp('0')" /></td>
+			<td><input type="button" value="=" onclick="sol()" /></td>
+			<td><input type="button" value="*" onclick="disp('*')" /></td>
+		</tr>
+	</table>
+	</div>
+
+	<div  class="deep"; style=" top: 65% ; left: 35%">
+	<div class="title" ; style="text-align: center; margin:auto; width: 17%;"><b>Simple Calculator</b></div>
+		<table border="0" align="center">	
+		<tr>
+			<td colspan="3"> <input type="text" id="result" />	</td>
+			<td><input type="button" style="width:50px ; height:35px"value="c" onclick="clr()" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="disp('7')" /></td>
+			<td><input type="button" value="8" onclick="disp('8')" /></td>
+			<td><input type="button" value="9" onclick="disp('9')" /></td>
+			<td><input type="button" value="+" onclick="disp('+')" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="disp('4')" /></td>
+			<td><input type="button" value="5" onclick="disp('5')" /></td>
+			<td><input type="button" value="6" onclick="disp('6')" /></td>
+			<td><input type="button" value="-" onclick="disp('-')" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onclick="disp('1')" /></td>
+			<td><input type="button" value="2" onclick="disp('2')" /></td>
+			<td><input type="button" value="3" onclick="disp('3')" /></td>
+			<td><input type="button" value="/" onclick="disp('/')" /></td>	
+		</tr>
+		<tr>
+			<td><input type="button" value="." onclick="disp('.')" /></td>
+			<td><input type="button" value="0" onclick="disp('0')" /></td>
+			<td><input type="button" value="=" onclick="sol()" /></td>
+			<td><input type="button" value="*" onclick="disp('*')" /></td>
+		</tr>
+	</table>
+	</div>
+
+	<div  style=" top: 65% ; left: 35%">
+	<div class="title" ; style="text-align: center; margin : auto; width: 17%;"><b>Simple Calculator</b></div>
+		<table border="0" align="center">	
+		<tr>
+			<td colspan="3"> <input type="text" id="result" />	</td>
+			<td><input type="button" style="width:50px ; height:35px"value="c" onclick="clr()" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="disp('7')" /></td>
+			<td><input type="button" value="8" onclick="disp('8')" /></td>
+			<td><input type="button" value="9" onclick="disp('9')" /></td>
+			<td><input type="button" value="+" onclick="disp('+')" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="disp('4')" /></td>
+			<td><input type="button" value="5" onclick="disp('5')" /></td>
+			<td><input type="button" value="6" onclick="disp('6')" /></td>
+			<td><input type="button" value="-" onclick="disp('-')" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onclick="disp('1')" /></td>
+			<td><input type="button" value="2" onclick="disp('2')" /></td>
+			<td><input type="button" value="3" onclick="disp('3')" /></td>
+			<td><input type="button" value="/" onclick="disp('/')" /></td>	
+		</tr>
+		<tr>
+			<td><input type="button" value="." onclick="disp('.')" /></td>
+			<td><input type="button" value="0" onclick="disp('0')" /></td>
+			<td><input type="button" value="=" onclick="sol()" /></td>
+			<td><input type="button" value="*" onclick="disp('*')" /></td>
+		</tr>
+	</table>
+
+	</div>
+
+	<div  style=" top: 65% ; left: 35%">
+	<div class="title" ; style="text-align: center; margin : auto; width: 17%;"><b>Simple Calculator</b></div>
+		<table border="0" align="center">	
+		<tr>
+			<td colspan="3"> <input type="text" id="result" />	</td>
+			<td><input type="button" style="width:50px ; height:35px"value="c" onclick="clr()" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="7" onclick="disp('7')" /></td>
+			<td><input type="button" value="8" onclick="disp('8')" /></td>
+			<td><input type="button" value="9" onclick="disp('9')" /></td>
+			<td><input type="button" value="+" onclick="disp('+')" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="4" onclick="disp('4')" /></td>
+			<td><input type="button" value="5" onclick="disp('5')" /></td>
+			<td><input type="button" value="6" onclick="disp('6')" /></td>
+			<td><input type="button" value="-" onclick="disp('-')" /></td>
+		</tr>
+		<tr>
+			<td><input type="button" value="1" onclick="disp('1')" /></td>
+			<td><input type="button" value="2" onclick="disp('2')" /></td>
+			<td><input type="button" value="3" onclick="disp('3')" /></td>
+			<td><input type="button" value="/" onclick="disp('/')" /></td>	
+		</tr>
+		<tr>
+			<td><input type="button" value="." onclick="disp('.')" /></td>
+			<td><input type="button" value="0" onclick="disp('0')" /></td>
+			<td><input type="button" value="=" onclick="sol()" /></td>
+			<td><input type="button" value="*" onclick="disp('*')" /></td>
+		</tr>
+	</table>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
